@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Music Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="music-player">
+        <header>
+            <h1>Music Player</h1>
+            <input type="text" id="search-bar" placeholder="Search music...">
+        </header>
+        <div class="main-content">
+            <aside class="categories">
+                <h2>Categories</h2>
+                <ul>
+                    <li>All</li>
+                    <li>Pop</li>
+                    <li>Rock</li>
+                    <li>Jazz</li>
+                    <li>Classical</li>
+                </ul>
+            </aside>
+            <section class="playlist">
+                <h2>Playlist</h2>
+                <ul id="playlist">
+                    <!-- Playlist items will be dynamically added here -->
+                </ul>
+            </section>
+        </div>
+        <footer>
+            <div class="controls">
+                <button id="prev">Prev</button>
+                <button id="play">Play</button>
+                <button id="pause">Pause</button>
+                <button id="next">Next</button>
+                <input type="range" id="volume-control" min="0" max="1" step="0.1">
+            </div>
+            <audio id="audio-player" controls hidden></audio>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
